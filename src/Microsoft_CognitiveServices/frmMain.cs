@@ -98,8 +98,6 @@ namespace Microsoft_CognitiveServices
             string filepath = textBox1.Text;
 
             var token = await FetchAccessToken(region, key);
-            //var config = SpeechConfig.FromAuthorizationToken(token, "westus");
-            //config.SpeechRecognitionLanguage = "en-us";
             string msg = string.Format("got token [{0}]", token);
             textBox2.AppendLine(msg);
             textBox2.AppendLine("<--------------------------------------------------------->");
