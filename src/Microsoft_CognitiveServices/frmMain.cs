@@ -23,7 +23,7 @@ namespace Microsoft_CognitiveServices
             InitializeComponent();
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog() { Filter = "WAV File (*.wav)|*.wav" };
 
