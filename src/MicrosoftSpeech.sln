@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftSpeech", "Microsof
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft_CognitiveServices", "Microsoft_CognitiveServices\Microsoft_CognitiveServices.csproj", "{1825DB47-DBD1-4865-97B6-CD2661B4C0B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google_SpeechRecognition", "Google_SpeechRecognition\Google_SpeechRecognition.csproj", "{3560D45A-35A8-4663-B5E3-EC0BF192A108}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1825DB47-DBD1-4865-97B6-CD2661B4C0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1825DB47-DBD1-4865-97B6-CD2661B4C0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1825DB47-DBD1-4865-97B6-CD2661B4C0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3560D45A-35A8-4663-B5E3-EC0BF192A108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3560D45A-35A8-4663-B5E3-EC0BF192A108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3560D45A-35A8-4663-B5E3-EC0BF192A108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3560D45A-35A8-4663-B5E3-EC0BF192A108}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

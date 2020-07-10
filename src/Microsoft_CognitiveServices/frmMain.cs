@@ -11,8 +11,6 @@ using System.Windows.Forms;
 using System.Net.Http;
 
 using System.Net.Http.Headers;
-//using Microsoft.CognitiveServices.Speech;
-//using Microsoft.CognitiveServices.Speech.Audio;
 
 namespace Microsoft_CognitiveServices
 {
@@ -53,8 +51,8 @@ namespace Microsoft_CognitiveServices
                 client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", key);
                 UriBuilder uriBuilder = new UriBuilder(url);
                 uriBuilder.Path += "/issueToken";
-                string msg = string.Format("Token Uri: {0} , key: [{1}]", uriBuilder.Uri.AbsoluteUri, key);
-                textBox2.AppendLine(msg);
+                //string msg = string.Format("Token Uri: {0} , key: [{1}]", uriBuilder.Uri.AbsoluteUri, key);
+                //textBox2.AppendLine(msg);
 
                 var content = new FormUrlEncodedContent(new Dictionary<string, string>());
                 var post = client.PostAsync(uriBuilder.Uri.AbsoluteUri, content);
@@ -98,9 +96,9 @@ namespace Microsoft_CognitiveServices
             string filepath = textBox1.Text;
 
             var token = await FetchAccessToken(region, key);
-            string msg = string.Format("got token [{0}]", token);
-            textBox2.AppendLine(msg);
-            textBox2.AppendLine("<--------------------------------------------------------->");
+            //string msg = string.Format("got token [{0}]", token);
+            //textBox2.AppendLine(msg);
+            //textBox2.AppendLine("<--------------------------------------------------------->");
 
             //SDK怪怪的，直接呼叫 REST API 反而會通.........!@$@#%$#@%#
             string speech = await RecognizeSpeech(token, region, language, filepath);
